@@ -1,0 +1,33 @@
+Package: fragmentation
+Type: Package
+Title: Forest Fragmentation for Binary and Continuous Forest Cover Rasters
+Version: 0.0.1
+Date: 2023-02-15
+Authors@R: 
+	c(
+		person(
+			given = 'Adam B.',
+			family = 'Smith',
+			role = c('cre', 'aut'),
+			email = 'adam.smith@mobot.org',
+			comment = c(ORCID = '0000-0002-6420-1659')
+		)
+	)
+Maintainer: Adam B. Smith <adam.smith@mobot.org>
+Description: Calculate forest (or similar) fragmentation connectivity, density,
+    and fragmentation class as per Riitters et al. 2020 Conservation Ecology
+	4:3. <https://www.jstor.org/stable/26271763> (also see errata).
+	Forest density, connectivity, and fragmentation indices can be calculated
+	for binary (forest/non-forest) and continuous rasters.
+Depends: 
+	omnibus,
+	terra
+Imports:
+Suggests:
+License: GPL (>=3)
+LazyData: true
+LazyLoad: yes
+URL: https://github.com/adamlilith/fragmentation
+BugReports: https://github.com/adamlilith/fragmentation
+Encoding: UTF-8
+RoxygenNote: 7.2.1
