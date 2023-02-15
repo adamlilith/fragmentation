@@ -7,12 +7,12 @@ Calculate forest (or similar) fragmentation connectivity, density, and fragmenta
 # Installing the package
 You can install the package using:
 
-`remotes::install_github('adamlilith/fragmentation', dependencies = TRUE)
+`remotes::install_github('adamlilith/fragmentation', dependencies = TRUE)`
 
 You may need to install the `remotes` package first.
 
 # Forest fragmentation indices
-Riitters et al. define 5 classes of fragmentation based on the density and connecitivity of cells with/without forest. These are:
+Riitters et al. define 5 classes of fragmentation, plus an "edge/" case, based on the density and connecitivity of cells with/without forest. These are:
 1. Patch (density < 0.4)
 2. Transitional (0.4 <= density < 0.6)
 3. Perforated (density >= 0.6 & density - connectivity > 0)
@@ -20,11 +20,15 @@ Riitters et al. define 5 classes of fragmentation based on the density and conne
 5. Undetermined (density >= 0.6 & density == connectivity)
 6. Interior (density == 1)
 
-Note that the fifth class, "undetermined", is an edge case. Users of the functions in `fragmentation` can decide to use the "undetermined" class or to assign these rare cases to one of the other classes.
+The fifth class, "undetermined", is the edge case and rarely occurs. Users of the functions in `fragmentation` can decide to use the "undetermined" class or to assign these rare cases to one of the other classes.
 
 # Package functions
 The package contains two functions and one raster used for examples. The functions are:
 * `fragBinary`: Calculate fragmentation for rasters with binary values (forest/not forest)
 * `fragCont`: Calculate fragmentation for rasters with continuous values (e.g., perfcent forest)
+
+Here is an example of input (top left) and output (all others) from the `fragBinary` function for an area located in the eastern pottion of the Republic of the Congo:
+
+<img align="center" src="examples.png">
 
 Adam
