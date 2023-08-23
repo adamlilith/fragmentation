@@ -10,4 +10,6 @@
 #' @docType package
 #' @author Adam B. Smith
 #' @name fragmentation
+#' @keywords internal 
+"_PACKAGE"
 NULL
